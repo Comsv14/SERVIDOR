@@ -7,7 +7,7 @@ $perro =array ('Mastin' => "Yunito",
 ),
 $gatos = array(
     'Persa' => "Vapeh",
-    'Comun' => "Felix",
+    'Comunn' => "Felix",
     'Siames' => "Mesi"
 )
 );
