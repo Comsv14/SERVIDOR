@@ -16,5 +16,24 @@ d) Declara un array de strings de nombre $jugador e introduce en él 5 elementos
 que sean "Crovic", "Antic", "Malic", "Zulic" y "Rostrich". A continuación usando el
 operador de concatenación haz que se muestre la frase: <<La alineación del
 equipo está compuesta por Crovic, Antic, Malic, Zulic y Rostrich.>>*/
-  
+
+//a
+$coches = array (32, 11, 45, 22, 78, -3, 9, 66, 5);
+echo $coches[5];
+echo "<br>";
+//b 
+$importe = array(32.583, 11.239, 45.781, 22.237);
+echo $importe[1];
+echo "<br>";
+echo $importe[3];
+//c
+$confirmado = array (true, true, false, true, false, false);
+echo "<br>";
+echo $confirmado[0];
+//d
+$jugador = array ("Crovic", "Antic", "Malic", "Zulic" , "Rostrich");
+echo "<br>";
+echo "La alineacion del equipo esta compuesta por: " .$jugador[0] . ", " .$jugador[1] . ", ".$jugador[2] . ", ".$jugador[3] . ", ".$jugador[4];
+
+
 ?>
