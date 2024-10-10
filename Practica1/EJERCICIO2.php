@@ -1,9 +1,9 @@
 <?php
 /* Dados 3 números asignados dentro del código a mostrar el número mayor de los
 tres. */
-  $num1=100;
-  $num2=20;
-  $num3=100;
+  $num1=1;
+  $num2=2;
+  $num3=3;
   //$max=max($num1,$num2,$num3);
   echo "Número 1: $num1<br>";
   echo "Número 2: $num2<br>";

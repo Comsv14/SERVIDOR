@@ -17,6 +17,6 @@ divisible por 1 y por sí mismo */
   if ($esprimo) {
     echo "$num es primo";
   } else {
-    echo "$num NO es primo";
+    echo "$num no es primo";
   }
 ?>
