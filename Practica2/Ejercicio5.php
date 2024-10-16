@@ -11,7 +11,7 @@ for ($i=0; $i < 3; $i++) {
 }
 
 foreach ($num as $fila) {
-    echo $num[][];
+    echo $num[$i][$j];
     echo "<br>";
 }
 
