@@ -5,5 +5,6 @@ al 9, siendo además los dos componentes del par distintos*/
     for ($j=1; $j<10; $j++) {
       if ($i!=$j) echo "($i,$j)";
     }
+    
   }
 ?>
