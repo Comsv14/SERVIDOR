@@ -1,7 +1,8 @@
 <?php
 if (isset($_POST['nombre']) && isset($_POST['apellidos'])){
         echo 'Nombre: ' .$_POST['nombre'].'<br>';
-        echo 'Apellidos: ' .$_POST['apellidos'];
+        echo 'Apellidos: ' .$_POST['apellidos'].'<br>';
+        var_dump($_POST);
     /*
     echo $_POST['nombre'];
     echo "<br>";
@@ -15,7 +16,7 @@ if (isset($_POST['nombre']) && isset($_POST['apellidos'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
     
