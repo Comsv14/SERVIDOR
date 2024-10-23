@@ -33,6 +33,13 @@ class Coche extends Cuatro_Ruedas {
     {
         return parent::__toString() . ', Número de cadenas de nieve: ' . $this->numero_cadenas_nieve;
     }
+    public  function aniadirPersona($peso_persona){
+        return parent::aniadirPersona($peso_persona);
+        if($this->peso>=1500 && $this->numero_cadenas_nieve<=2){
+            echo 'Atencion, ponga 4 cadenas para la nieve'.'<br>';
+        }
+        
+    }
 }
 ?>
 

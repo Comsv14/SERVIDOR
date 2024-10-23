@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>   
+            <title>Ejercicio3 Unidad 4</title>   
     </head>
     <body>
     <?php
@@ -35,7 +35,7 @@
                     echo "Error: No se puede dividir por cero";
                     }
                 }
-                echo "<h2>Formulario</h2>";
+                echo "<h2>Formulario siguiente</h2>";
                 echo "<form action='Ejercicio3Unidad4.php' method='post'>
                 <label for='nombre'>A:</label><br>
                 <input type='text' id='num1' name='num1' required><br><br>
@@ -49,7 +49,7 @@
                 <input type='submit' name='division' value='División'>
                 </form>";
                 } else {
-                echo "<h2>Formulario</h2>";
+                echo "<h2>Primer Formulario</h2>";
                 echo "<form action='Ejercicio3Unidad4.php' method='post'>
                 <label for='nombre'>A:</label><br>
                 <input type='text' id='num1' name='num1' required><br><br>
