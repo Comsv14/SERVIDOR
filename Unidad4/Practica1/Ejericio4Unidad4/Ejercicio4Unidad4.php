@@ -1,3 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario en PHP</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th, td {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        th {
+            background-color: blue;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        .calendario-titulo {
+            width: 300px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0 auto;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center;">Generar Calendario</h2>
+<form method="post" style="text-align:center;">
+    <label for="mes">Mes:</label>
+    <input type="number" id="mes" name="mes" min="1" max="12" required>
+    <label for="anio">Año:</label>
+    <input type="number" id="anio" name="anio" min="1900" max="2100" required>
+    <button type="submit">ENVIAR</button>
+</form>
+
 <?php
 /* 
     Construir  un  calendario,  se  ha  de  introducir  un  mes  y  un  año  y  al  pulsar  el  botón 
@@ -6,7 +57,8 @@
     días, así como  el día de la semana en que empieza dicho  mes. El resultado  se ha de 
     mostrar en formato tabla de HTML  y se ha de resolver en un solo script.
 */
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+// Solo generamos el calendario si se han enviado los datos
+if (isset($_POST['mes']) && isset($_POST['anio'])) {
     $mes = intval($_POST['mes']);
     $anio = intval($_POST['anio']);
 
@@ -25,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $dias_semana = ['L', 'M', 'X', 'J', 'V', 'S', 'D'];
 
     // Mostrar el título del calendario con el mismo ancho que la tabla
-    echo "<div class='calendario-titulo'>Calendario $anio</div>";
+    echo "<div class='calendario-titulo'>Calendario $mes/$anio</div>";
     
     echo "<table>";
     echo "<tr>";
@@ -58,5 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "</tr>";
     echo "</table>";
 }
-
 ?>
+
+</body>
+</html>
