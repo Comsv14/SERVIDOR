@@ -6,6 +6,7 @@
     resolver con un sólo script 
 */
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
