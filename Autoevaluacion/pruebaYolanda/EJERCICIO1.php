@@ -19,7 +19,10 @@
 
         foreach ($valores as $valor) {
             if (is_numeric($valor) && $valor >= 1 && $valor <= 100) {
-                $resultado[] = decbin($valor);
+                $resultado[] = [
+                    'decimal' => $valor,
+                    'binario' => decbin($valor)
+                ];
             } else {
                 $valido = false;
                 break;
@@ -30,8 +33,8 @@
             $mostrarFormulario = false;
             echo "<h3>Resultados en Binario:</h3>";
             echo "<ul>";
-            foreach ($resultado as $binario) {
-                echo "<li>$binario</li>";
+            foreach ($resultado as $num) {
+                echo "<li>{$num['decimal']} = {$num['binario']}</li>";
             }
             echo "</ul>";
         } else {
