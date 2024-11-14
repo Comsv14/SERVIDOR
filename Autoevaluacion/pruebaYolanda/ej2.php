@@ -10,7 +10,7 @@ $_SESSION['numero_decimal'] = $decimal;  // Guardar el valor decimal en la sesi√
 function mostrarCartas($binario) {
     $cartas = '';
     for ($i = 0; $i < 4; $i++) {
-        $cartas .= ($binario[$i] == '1') ? "<img src='carta.png' alt='Carta' width='50'>" : "<div style='width:50px;height:75px;background:black;display:inline-block;'></div>";
+        $cartas .= ($binario[$i] == '1') ? "<img src='Uno.jpg' alt='Carta' width='50'>" : "<div style='width:50px;height:75px;background:black;display:inline-block;'></div>";
     }
     return $cartas;
 }
