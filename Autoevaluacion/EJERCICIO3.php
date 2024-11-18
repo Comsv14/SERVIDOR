@@ -21,13 +21,14 @@
             $numero_aleatorio = $_SESSION['numero'];
             $tu_num = $_POST['valor'];  
             $_SESSION['cont']++;  
-            echo '<p>Tu número es: ' . htmlspecialchars($tu_num) . '</p>';
+            echo '<p>Tu número es: ' . $tu_num . '</p>';
 
             if ($numero_aleatorio == $tu_num) {
                 echo 'ENHORABUENA, HAS ACERTADO';
                 echo '<p>Has necesitado ' . $_SESSION['cont'] . ' intentos.</p>';
+                echo '<a href="EJERCICIO3.php"> Volver a jugar </a>';
                 
-                session_unset();
+                session_destroy();
             } else {
                 if ($numero_aleatorio > $tu_num) {
                     echo '<p>MI NUMERO ES MAYOR</p>';
