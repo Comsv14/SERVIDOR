@@ -20,8 +20,12 @@ for ($i = 0; $i < 4; $i++) {
 </head>
 <body>
     <h1>Adivina el número decimal</h1>
-    <h2>El número en BINARIO es:</h2>
+    <h2>El número en BINARIO es: 
     <?php
+    foreach ($bin as $bit){
+        echo $bit;
+    }
+    echo '<br></br>';
     for ($i = 0; $i < 4; $i++) {
         if ($bin[$i] == 1) {
             switch ($potencias[$i]) {
@@ -45,6 +49,7 @@ for ($i = 0; $i < 4; $i++) {
         }
     }
     ?>
+    </h2>
     <form action="EJERCICIO21.php" method="post">
         <label for="numdecimal">Número decimal:</label>
         <input type="text" id="numdecimal" name="numdecimal" required>
